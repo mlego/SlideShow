@@ -5,9 +5,15 @@ import ShowEngine
 
 class ViewController: UIViewController {
     
+    var showEngine: ShowEngine?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let _ = ShowEngine() { print($0 ?? "") }
+        showEngine = ShowEngine(imageSize: .regular)
+        
+        if let engine = showEngine {
+            engine.start()
+        }
     }
 }
