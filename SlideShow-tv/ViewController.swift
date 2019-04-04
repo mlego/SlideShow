@@ -8,6 +8,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        let _ = ShowEngine()
+        let _ = ShowEngine() { print($0 ?? "") }
     }
 }

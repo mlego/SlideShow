@@ -8,7 +8,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let _ = ShowEngine()
+        let _ = ShowEngine() { print($0 ?? "") }
     }
 
     override var representedObject: Any? {

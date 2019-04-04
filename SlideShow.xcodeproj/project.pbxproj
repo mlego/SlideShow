@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2490E7430E1BA5F13BF0F2D6 /* Pods_SlideShow_watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1AFC7C415AA57D3AC8709C /* Pods_SlideShow_watch.framework */; };
+		34E6527BD4FC2800CADF890D /* Pods_SlideShow_mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76F0BAC8CAB7BC0C3853D7 /* Pods_SlideShow_mac.framework */; };
+		95A6EF8650F6B32E17103215 /* Pods_SlideShow_tv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D53EB4C0AD78E0DE650284 /* Pods_SlideShow_tv.framework */; };
 		9E05BC2E2255BFCE008CD951 /* ShowEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A112255AB6F005B929E /* ShowEngine.framework */; };
 		9E05BC2F2255BFCE008CD951 /* ShowEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A112255AB6F005B929E /* ShowEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9EC929FE2255AB6E005B929E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC929FD2255AB6E005B929E /* AppDelegate.swift */; };
@@ -36,6 +39,8 @@
 		9EC92A6E2255ADE4005B929E /* ShowEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A132255AB6F005B929E /* ShowEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9EC92A722255ADEA005B929E /* ShowEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A152255AB6F005B929E /* ShowEngine.framework */; };
 		9EC92A732255ADEA005B929E /* ShowEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A152255AB6F005B929E /* ShowEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF6B854240B46A1A8962AF93 /* Pods_SlideShow_watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550E7E7A35A151E1065598F8 /* Pods_SlideShow_watch_Extension.framework */; };
+		B0040C05407232151373FB04 /* Pods_SlideShow_iphone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBA843FA37D4AF5BB8118E8 /* Pods_SlideShow_iphone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +186,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		550E7E7A35A151E1065598F8 /* Pods_SlideShow_watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideShow_watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D7760EC38F66CEDACB86DA /* Pods-SlideShow-tv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-tv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-tv/Pods-SlideShow-tv.debug.xcconfig"; sourceTree = "<group>"; };
+		8DBA843FA37D4AF5BB8118E8 /* Pods_SlideShow_iphone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideShow_iphone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EFF95992DDCF3903CCAC300 /* Pods-SlideShow-watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-watch/Pods-SlideShow-watch.debug.xcconfig"; sourceTree = "<group>"; };
+		957FAD57F99DB97193A65563 /* Pods-SlideShow-mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac.release.xcconfig"; sourceTree = "<group>"; };
+		962B753E0628DFE7EB4F3AC0 /* Pods-SlideShow-mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac.debug.xcconfig"; sourceTree = "<group>"; };
+		9E05BC362255C33C008CD951 /* SlideShow-mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SlideShow-mac.entitlements"; sourceTree = "<group>"; };
 		9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShowEngineFramework.xcodeproj; path = ShowEngineFramework/ShowEngineFramework.xcodeproj; sourceTree = "<group>"; };
 		9EC929FA2255AB6E005B929E /* SlideShow-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SlideShow-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC929FD2255AB6E005B929E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +225,15 @@
 		9EC92A612255AC3D005B929E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EC92A632255AC3D005B929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EC92A642255AC3D005B929E /* SlideShow_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlideShow_mac.entitlements; sourceTree = "<group>"; };
+		B5D53EB4C0AD78E0DE650284 /* Pods_SlideShow_tv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideShow_tv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1AFC7C415AA57D3AC8709C /* Pods_SlideShow_watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideShow_watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB1D283586727368EA2B661 /* Pods-SlideShow-iphone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-iphone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-iphone/Pods-SlideShow-iphone.debug.xcconfig"; sourceTree = "<group>"; };
+		C4AFBE869743DEB19106BD92 /* Pods-SlideShow-watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-watch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-watch Extension/Pods-SlideShow-watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		C7108AFA1FA72C4C50F5CFA8 /* Pods-SlideShow-watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-watch/Pods-SlideShow-watch.release.xcconfig"; sourceTree = "<group>"; };
+		E6CA4D9658F469C01A778767 /* Pods-SlideShow-watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-watch Extension/Pods-SlideShow-watch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		F208348788D39F3746360FF7 /* Pods-SlideShow-tv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-tv.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-tv/Pods-SlideShow-tv.release.xcconfig"; sourceTree = "<group>"; };
+		FBE8AE4D52D6DD5BEFCD6FE8 /* Pods-SlideShow-iphone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-iphone.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-iphone/Pods-SlideShow-iphone.release.xcconfig"; sourceTree = "<group>"; };
+		FD76F0BAC8CAB7BC0C3853D7 /* Pods_SlideShow_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideShow_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC92A682255AD93005B929E /* ShowEngine.framework in Frameworks */,
+				B0040C05407232151373FB04 /* Pods_SlideShow_iphone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E05BC2E2255BFCE008CD951 /* ShowEngine.framework in Frameworks */,
+				AF6B854240B46A1A8962AF93 /* Pods_SlideShow_watch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC92A6D2255ADE4005B929E /* ShowEngine.framework in Frameworks */,
+				95A6EF8650F6B32E17103215 /* Pods_SlideShow_tv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,12 +269,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC92A722255ADEA005B929E /* ShowEngine.framework in Frameworks */,
+				34E6527BD4FC2800CADF890D /* Pods_SlideShow_mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26022BA390D8436A161E44B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2490E7430E1BA5F13BF0F2D6 /* Pods_SlideShow_watch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4837C89AD840CEBDEBA330A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFB1D283586727368EA2B661 /* Pods-SlideShow-iphone.debug.xcconfig */,
+				FBE8AE4D52D6DD5BEFCD6FE8 /* Pods-SlideShow-iphone.release.xcconfig */,
+				962B753E0628DFE7EB4F3AC0 /* Pods-SlideShow-mac.debug.xcconfig */,
+				957FAD57F99DB97193A65563 /* Pods-SlideShow-mac.release.xcconfig */,
+				78D7760EC38F66CEDACB86DA /* Pods-SlideShow-tv.debug.xcconfig */,
+				F208348788D39F3746360FF7 /* Pods-SlideShow-tv.release.xcconfig */,
+				8EFF95992DDCF3903CCAC300 /* Pods-SlideShow-watch.debug.xcconfig */,
+				C7108AFA1FA72C4C50F5CFA8 /* Pods-SlideShow-watch.release.xcconfig */,
+				C4AFBE869743DEB19106BD92 /* Pods-SlideShow-watch Extension.debug.xcconfig */,
+				E6CA4D9658F469C01A778767 /* Pods-SlideShow-watch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9EC929AF2255A16E005B929E = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +311,8 @@
 				9EC92A462255AC2B005B929E /* SlideShow-tv */,
 				9EC92A592255AC3D005B929E /* SlideShow-mac */,
 				9EC929FB2255AB6E005B929E /* Products */,
+				4837C89AD840CEBDEBA330A3 /* Pods */,
+				E60B668027171728D0041E74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -338,6 +390,7 @@
 		9EC92A592255AC3D005B929E /* SlideShow-mac */ = {
 			isa = PBXGroup;
 			children = (
+				9E05BC362255C33C008CD951 /* SlideShow-mac.entitlements */,
 				9EC92A5A2255AC3D005B929E /* AppDelegate.swift */,
 				9EC92A5C2255AC3D005B929E /* ViewController.swift */,
 				9EC92A5E2255AC3D005B929E /* Assets.xcassets */,
@@ -348,6 +401,18 @@
 			path = "SlideShow-mac";
 			sourceTree = "<group>";
 		};
+		E60B668027171728D0041E74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DBA843FA37D4AF5BB8118E8 /* Pods_SlideShow_iphone.framework */,
+				FD76F0BAC8CAB7BC0C3853D7 /* Pods_SlideShow_mac.framework */,
+				B5D53EB4C0AD78E0DE650284 /* Pods_SlideShow_tv.framework */,
+				BE1AFC7C415AA57D3AC8709C /* Pods_SlideShow_watch.framework */,
+				550E7E7A35A151E1065598F8 /* Pods_SlideShow_watch_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,11 +420,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC92A162255AB6F005B929E /* Build configuration list for PBXNativeTarget "SlideShow-iphone" */;
 			buildPhases = (
+				A3B224BF67660CAA8F11D0CD /* [CP] Check Pods Manifest.lock */,
 				9EC929F62255AB6E005B929E /* Sources */,
 				9EC929F72255AB6E005B929E /* Frameworks */,
 				9EC929F82255AB6E005B929E /* Resources */,
 				9EC92A402255AC18005B929E /* Embed Watch Content */,
 				9EC92A6C2255AD93005B929E /* Embed Frameworks */,
+				43E240622537577B8961768B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,8 +443,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC92A3D2255AC18005B929E /* Build configuration list for PBXNativeTarget "SlideShow-watch" */;
 			buildPhases = (
+				2B6A66D06E399C2C8F8E8EE7 /* [CP] Check Pods Manifest.lock */,
 				9EC92A192255AC17005B929E /* Resources */,
 				9EC92A3C2255AC18005B929E /* Embed App Extensions */,
+				E26022BA390D8436A161E44B /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -393,10 +462,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC92A392255AC18005B929E /* Build configuration list for PBXNativeTarget "SlideShow-watch Extension" */;
 			buildPhases = (
+				A8BCB6F3EE0D1466C322C7EB /* [CP] Check Pods Manifest.lock */,
 				9EC92A232255AC18005B929E /* Sources */,
 				9EC92A242255AC18005B929E /* Frameworks */,
 				9EC92A252255AC18005B929E /* Resources */,
 				9E05BC322255BFCE008CD951 /* Embed Frameworks */,
+				1FA85ACBE7FF783CCB0B245B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -412,10 +483,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC92A512255AC2C005B929E /* Build configuration list for PBXNativeTarget "SlideShow-tv" */;
 			buildPhases = (
+				7107FC9B5138B108C5789A5F /* [CP] Check Pods Manifest.lock */,
 				9EC92A412255AC2B005B929E /* Sources */,
 				9EC92A422255AC2B005B929E /* Frameworks */,
 				9EC92A432255AC2B005B929E /* Resources */,
 				9EC92A712255ADE4005B929E /* Embed Frameworks */,
+				7FEF4CC1DFD37E212CC3D56E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -431,10 +504,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC92A652255AC3D005B929E /* Build configuration list for PBXNativeTarget "SlideShow-mac" */;
 			buildPhases = (
+				48BF33CC570B5FE579B4351E /* [CP] Check Pods Manifest.lock */,
 				9EC92A542255AC3D005B929E /* Sources */,
 				9EC92A552255AC3D005B929E /* Frameworks */,
 				9EC92A562255AC3D005B929E /* Resources */,
 				9EC92A762255ADEA005B929E /* Embed Frameworks */,
+				27B950A777EF34D5400F82E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -469,6 +544,11 @@
 					};
 					9EC92A572255AC3D005B929E = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -578,6 +658,171 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FA85ACBE7FF783CCB0B245B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-watch Extension/Pods-SlideShow-watch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-watch Extension/Pods-SlideShow-watch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27B950A777EF34D5400F82E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-macOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B6A66D06E399C2C8F8E8EE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlideShow-watch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43E240622537577B8961768B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-iphone/Pods-SlideShow-iphone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-iphone/Pods-SlideShow-iphone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48BF33CC570B5FE579B4351E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlideShow-mac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7107FC9B5138B108C5789A5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlideShow-tv-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FEF4CC1DFD37E212CC3D56E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-tv/Pods-SlideShow-tv-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-tvOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-tv/Pods-SlideShow-tv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3B224BF67660CAA8F11D0CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlideShow-iphone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8BCB6F3EE0D1466C322C7EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlideShow-watch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9EC929F62255AB6E005B929E /* Sources */ = {
@@ -710,6 +955,7 @@
 		};
 		9EC92A172255AB6F005B929E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB1D283586727368EA2B661 /* Pods-SlideShow-iphone.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -783,6 +1029,7 @@
 		};
 		9EC92A182255AB6F005B929E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBE8AE4D52D6DD5BEFCD6FE8 /* Pods-SlideShow-iphone.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -850,6 +1097,7 @@
 		};
 		9EC92A3A2255AC18005B929E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4AFBE869743DEB19106BD92 /* Pods-SlideShow-watch Extension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
@@ -924,6 +1172,7 @@
 		};
 		9EC92A3B2255AC18005B929E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6CA4D9658F469C01A778767 /* Pods-SlideShow-watch Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
@@ -992,6 +1241,7 @@
 		};
 		9EC92A3E2255AC18005B929E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EFF95992DDCF3903CCAC300 /* Pods-SlideShow-watch.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1064,6 +1314,7 @@
 		};
 		9EC92A3F2255AC18005B929E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7108AFA1FA72C4C50F5CFA8 /* Pods-SlideShow-watch.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1130,6 +1381,7 @@
 		};
 		9EC92A522255AC2C005B929E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D7760EC38F66CEDACB86DA /* Pods-SlideShow-tv.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -1203,6 +1455,7 @@
 		};
 		9EC92A532255AC2C005B929E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F208348788D39F3746360FF7 /* Pods-SlideShow-tv.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -1270,6 +1523,7 @@
 		};
 		9EC92A662255AC3D005B929E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962B753E0628DFE7EB4F3AC0 /* Pods-SlideShow-mac.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1301,7 +1555,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = "SlideShow-mac/SlideShow_mac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "SlideShow-mac/SlideShow-mac.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1344,6 +1598,7 @@
 		};
 		9EC92A672255AC3D005B929E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957FAD57F99DB97193A65563 /* Pods-SlideShow-mac.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1375,7 +1630,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = "SlideShow-mac/SlideShow_mac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "SlideShow-mac/SlideShow-mac.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

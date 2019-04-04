@@ -9,7 +9,7 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        let _ = ShowEngine()
+        let _ = ShowEngine() { print($0 ?? "") }
     }
     
     override func willActivate() {
