@@ -28,6 +28,12 @@
 		9EC92A5D2255AC3D005B929E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC92A5C2255AC3D005B929E /* ViewController.swift */; };
 		9EC92A5F2255AC3D005B929E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC92A5E2255AC3D005B929E /* Assets.xcassets */; };
 		9EC92A622255AC3D005B929E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC92A602255AC3D005B929E /* Main.storyboard */; };
+		9EC92A682255AD93005B929E /* ShowEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A0F2255AB6F005B929E /* ShowEngine.framework */; };
+		9EC92A692255AD93005B929E /* ShowEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A0F2255AB6F005B929E /* ShowEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9EC92A6D2255ADE4005B929E /* ShowEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A132255AB6F005B929E /* ShowEngine.framework */; };
+		9EC92A6E2255ADE4005B929E /* ShowEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A132255AB6F005B929E /* ShowEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9EC92A722255ADEA005B929E /* ShowEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A152255AB6F005B929E /* ShowEngine.framework */; };
+		9EC92A732255ADEA005B929E /* ShowEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A152255AB6F005B929E /* ShowEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,27 @@
 			remoteGlobalIDString = 9EC92A1A2255AC17005B929E;
 			remoteInfo = "SlideShow-watch";
 		};
+		9EC92A6A2255AD93005B929E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EC929C52255A80A005B929E;
+			remoteInfo = "ShowEngine-iOS";
+		};
+		9EC92A6F2255ADE4005B929E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EC929E02255A82F005B929E;
+			remoteInfo = "ShowEngine-tvOS";
+		};
+		9EC92A742255ADEA005B929E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EC929ED2255A83F005B929E;
+			remoteInfo = "ShowEngine-macOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -96,6 +123,39 @@
 				9EC92A382255AC18005B929E /* SlideShow-watch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EC92A6C2255AD93005B929E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9EC92A692255AD93005B929E /* ShowEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EC92A712255ADE4005B929E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9EC92A6E2255ADE4005B929E /* ShowEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EC92A762255ADEA005B929E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9EC92A732255ADEA005B929E /* ShowEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -140,6 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC92A682255AD93005B929E /* ShowEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC92A6D2255ADE4005B929E /* ShowEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC92A722255ADEA005B929E /* ShowEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +338,13 @@
 				9EC929F72255AB6E005B929E /* Frameworks */,
 				9EC929F82255AB6E005B929E /* Resources */,
 				9EC92A402255AC18005B929E /* Embed Watch Content */,
+				9EC92A6C2255AD93005B929E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				9EC92A372255AC18005B929E /* PBXTargetDependency */,
+				9EC92A6B2255AD93005B929E /* PBXTargetDependency */,
 			);
 			name = "SlideShow-iphone";
 			productName = "SlideShow-iphone";
@@ -327,10 +392,12 @@
 				9EC92A412255AC2B005B929E /* Sources */,
 				9EC92A422255AC2B005B929E /* Frameworks */,
 				9EC92A432255AC2B005B929E /* Resources */,
+				9EC92A712255ADE4005B929E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9EC92A702255ADE4005B929E /* PBXTargetDependency */,
 			);
 			name = "SlideShow-tv";
 			productName = "SlideShow-tv";
@@ -344,10 +411,12 @@
 				9EC92A542255AC3D005B929E /* Sources */,
 				9EC92A552255AC3D005B929E /* Frameworks */,
 				9EC92A562255AC3D005B929E /* Resources */,
+				9EC92A762255ADEA005B929E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9EC92A752255ADEA005B929E /* PBXTargetDependency */,
 			);
 			name = "SlideShow-mac";
 			productName = "SlideShow-mac";
@@ -537,6 +606,21 @@
 			isa = PBXTargetDependency;
 			target = 9EC92A1A2255AC17005B929E /* SlideShow-watch */;
 			targetProxy = 9EC92A362255AC18005B929E /* PBXContainerItemProxy */;
+		};
+		9EC92A6B2255AD93005B929E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ShowEngine-iOS";
+			targetProxy = 9EC92A6A2255AD93005B929E /* PBXContainerItemProxy */;
+		};
+		9EC92A702255ADE4005B929E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ShowEngine-tvOS";
+			targetProxy = 9EC92A6F2255ADE4005B929E /* PBXContainerItemProxy */;
+		};
+		9EC92A752255ADEA005B929E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ShowEngine-macOS";
+			targetProxy = 9EC92A742255ADEA005B929E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
