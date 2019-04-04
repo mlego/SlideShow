@@ -3,6 +3,7 @@
 import Foundation
 
 public struct ShowEngineModel: Codable {
+    
     public let imageDescription: String?
     public let images: Images
     public let likes: Int?
@@ -48,7 +49,7 @@ extension ShowEngineModel: CustomStringConvertible {
     
     public var description: String {
         return """
-        Image: \(imageDescription ?? "")
+        Description: \(imageDescription ?? "")
         Likes: \(likes ?? 0)
         Photographer: \(user.name ?? "")
         Photographer's Location: \(user.location ?? "")
