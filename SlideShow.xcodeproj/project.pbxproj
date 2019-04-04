@@ -666,7 +666,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-watch Extension/Pods-SlideShow-watch Extension-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SlideShow-watch Extension/Pods-SlideShow-watch Extension-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -675,7 +675,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-watch Extension/Pods-SlideShow-watch Extension-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlideShow-watch Extension/Pods-SlideShow-watch Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		27B950A777EF34D5400F82E2 /* [CP] Embed Pods Frameworks */ = {
@@ -684,7 +684,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-macOS/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -693,7 +693,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2B6A66D06E399C2C8F8E8EE7 /* [CP] Check Pods Manifest.lock */ = {
@@ -720,7 +720,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-iphone/Pods-SlideShow-iphone-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SlideShow-iphone/Pods-SlideShow-iphone-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -729,7 +729,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-iphone/Pods-SlideShow-iphone-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlideShow-iphone/Pods-SlideShow-iphone-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		48BF33CC570B5FE579B4351E /* [CP] Check Pods Manifest.lock */ = {
@@ -774,7 +774,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-tv/Pods-SlideShow-tv-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SlideShow-tv/Pods-SlideShow-tv-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-tvOS/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -783,7 +783,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideShow-tv/Pods-SlideShow-tv-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlideShow-tv/Pods-SlideShow-tv-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A3B224BF67660CAA8F11D0CD /* [CP] Check Pods Manifest.lock */ = {
