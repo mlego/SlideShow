@@ -3,7 +3,7 @@
 import Foundation
 
 public struct ShowEngineModel: Codable {
-    public let description: String?
+    public let imageDescription: String?
     public let images: Images
     public let likes: Int?
     public let user: User
@@ -38,8 +38,21 @@ public struct ShowEngineModel: Codable {
     
     public enum CodingKeys: String, CodingKey {
         case images = "urls"
-        case description = "description"
+        case imageDescription = "description"
         case likes = "likes"
         case user = "user"
+    }
+}
+
+extension ShowEngineModel: CustomStringConvertible {
+    
+    public var description: String {
+        return """
+        Image: \(imageDescription ?? "")
+        Likes: \(likes ?? 0)
+        Photographer: \(user.name ?? "")
+        Photographer's Location: \(user.location ?? "")
+        Photographer's Bio: \(user.bio ?? "")
+        """
     }
 }
