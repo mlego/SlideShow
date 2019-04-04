@@ -14,16 +14,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9EC929C62255A80A005B929E /* ShowEngine_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowEngine_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC929C62255A80A005B929E /* ShowEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC929C92255A80A005B929E /* ShowEngine_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowEngine_iOS.h; sourceTree = "<group>"; };
 		9EC929CA2255A80A005B929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EC929D42255A826005B929E /* ShowEngine_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowEngine_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC929D42255A826005B929E /* ShowEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC929D62255A826005B929E /* ShowEngine_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowEngine_watchOS.h; sourceTree = "<group>"; };
 		9EC929D72255A826005B929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EC929E12255A82F005B929E /* ShowEngine_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowEngine_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC929E12255A82F005B929E /* ShowEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC929E32255A830005B929E /* ShowEngine_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowEngine_tvOS.h; sourceTree = "<group>"; };
 		9EC929E42255A830005B929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EC929EE2255A83F005B929E /* ShowEngine_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowEngine_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC929EE2255A83F005B929E /* ShowEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC929F02255A83F005B929E /* ShowEngine_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowEngine_macOS.h; sourceTree = "<group>"; };
 		9EC929F12255A83F005B929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,10 +74,10 @@
 		9EC929C72255A80A005B929E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9EC929C62255A80A005B929E /* ShowEngine_iOS.framework */,
-				9EC929D42255A826005B929E /* ShowEngine_watchOS.framework */,
-				9EC929E12255A82F005B929E /* ShowEngine_tvOS.framework */,
-				9EC929EE2255A83F005B929E /* ShowEngine_macOS.framework */,
+				9EC929C62255A80A005B929E /* ShowEngine.framework */,
+				9EC929D42255A826005B929E /* ShowEngine.framework */,
+				9EC929E12255A82F005B929E /* ShowEngine.framework */,
+				9EC929EE2255A83F005B929E /* ShowEngine.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 			);
 			name = "ShowEngine-iOS";
 			productName = "ShowEngine-iOS";
-			productReference = 9EC929C62255A80A005B929E /* ShowEngine_iOS.framework */;
+			productReference = 9EC929C62255A80A005B929E /* ShowEngine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9EC929D32255A826005B929E /* ShowEngine-watchOS */ = {
@@ -189,7 +189,7 @@
 			);
 			name = "ShowEngine-watchOS";
 			productName = "ShowEngine-watchOS";
-			productReference = 9EC929D42255A826005B929E /* ShowEngine_watchOS.framework */;
+			productReference = 9EC929D42255A826005B929E /* ShowEngine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9EC929E02255A82F005B929E /* ShowEngine-tvOS */ = {
@@ -207,7 +207,7 @@
 			);
 			name = "ShowEngine-tvOS";
 			productName = "ShowEngine-tvOS";
-			productReference = 9EC929E12255A82F005B929E /* ShowEngine_tvOS.framework */;
+			productReference = 9EC929E12255A82F005B929E /* ShowEngine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9EC929ED2255A83F005B929E /* ShowEngine-macOS */ = {
@@ -225,7 +225,7 @@
 			);
 			name = "ShowEngine-macOS";
 			productName = "ShowEngine-macOS";
-			productReference = 9EC929EE2255A83F005B929E /* ShowEngine_macOS.framework */;
+			productReference = 9EC929EE2255A83F005B929E /* ShowEngine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -415,7 +415,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.ShowEngine-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ShowEngine;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -490,7 +490,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.ShowEngine-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ShowEngine;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -573,7 +573,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.ShowEngine-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ShowEngine;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -649,7 +649,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.ShowEngine-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ShowEngine;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -732,7 +732,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.ShowEngine-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ShowEngine;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -807,7 +807,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.ShowEngine-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ShowEngine;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -893,7 +893,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.ShowEngine-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ShowEngine;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -969,7 +969,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.ShowEngine-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ShowEngine;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
