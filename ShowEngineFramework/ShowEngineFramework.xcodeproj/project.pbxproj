@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E05BC292255BDEC008CD951 /* ShowEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05BC282255BDEC008CD951 /* ShowEngine.swift */; };
+		9E05BC2A2255BDEC008CD951 /* ShowEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05BC282255BDEC008CD951 /* ShowEngine.swift */; };
+		9E05BC2B2255BDEC008CD951 /* ShowEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05BC282255BDEC008CD951 /* ShowEngine.swift */; };
+		9E05BC2C2255BDEC008CD951 /* ShowEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05BC282255BDEC008CD951 /* ShowEngine.swift */; };
 		9EC929CB2255A80A005B929E /* ShowEngine_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC929C92255A80A005B929E /* ShowEngine_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EC929D82255A826005B929E /* ShowEngine_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC929D62255A826005B929E /* ShowEngine_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EC929E52255A830005B929E /* ShowEngine_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC929E32255A830005B929E /* ShowEngine_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -14,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E05BC282255BDEC008CD951 /* ShowEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEngine.swift; sourceTree = "<group>"; };
 		9EC929C62255A80A005B929E /* ShowEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC929C92255A80A005B929E /* ShowEngine_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowEngine_iOS.h; sourceTree = "<group>"; };
 		9EC929CA2255A80A005B929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 		9EC929B72255A1B0005B929E = {
 			isa = PBXGroup;
 			children = (
+				9E05BC282255BDEC008CD951 /* ShowEngine.swift */,
 				9EC929C82255A80A005B929E /* ShowEngine-iOS */,
 				9EC929D52255A826005B929E /* ShowEngine-watchOS */,
 				9EC929E22255A830005B929E /* ShowEngine-tvOS */,
@@ -238,15 +244,19 @@
 				TargetAttributes = {
 					9EC929C52255A80A005B929E = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					9EC929D32255A826005B929E = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					9EC929E02255A82F005B929E = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					9EC929ED2255A83F005B929E = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -306,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E05BC292255BDEC008CD951 /* ShowEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E05BC2A2255BDEC008CD951 /* ShowEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E05BC2B2255BDEC008CD951 /* ShowEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E05BC2C2255BDEC008CD951 /* ShowEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,14 +2,14 @@
 
 import WatchKit
 import Foundation
-
+import ShowEngine
 
 class InterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+        let _ = ShowEngine()
     }
     
     override func willActivate() {

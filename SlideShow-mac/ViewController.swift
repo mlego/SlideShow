@@ -1,13 +1,14 @@
 // 
 
 import Cocoa
+import ShowEngine
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let _ = ShowEngine()
     }
 
     override var representedObject: Any? {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E05BC2E2255BFCE008CD951 /* ShowEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A112255AB6F005B929E /* ShowEngine.framework */; };
+		9E05BC2F2255BFCE008CD951 /* ShowEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A112255AB6F005B929E /* ShowEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9EC929FE2255AB6E005B929E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC929FD2255AB6E005B929E /* AppDelegate.swift */; };
 		9EC92A002255AB6E005B929E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC929FF2255AB6E005B929E /* ViewController.swift */; };
 		9EC92A032255AB6E005B929E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC92A012255AB6E005B929E /* Main.storyboard */; };
@@ -37,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9E05BC302255BFCE008CD951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EC929D32255A826005B929E;
+			remoteInfo = "ShowEngine-watchOS";
+		};
 		9EC92A0E2255AB6F005B929E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */;
@@ -103,6 +112,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9E05BC322255BFCE008CD951 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9E05BC2F2255BFCE008CD951 /* ShowEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EC92A3C2255AC18005B929E /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E05BC2E2255BFCE008CD951 /* ShowEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,10 +396,12 @@
 				9EC92A232255AC18005B929E /* Sources */,
 				9EC92A242255AC18005B929E /* Frameworks */,
 				9EC92A252255AC18005B929E /* Resources */,
+				9E05BC322255BFCE008CD951 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9E05BC312255BFCE008CD951 /* PBXTargetDependency */,
 			);
 			name = "SlideShow-watch Extension";
 			productName = "SlideShow-watch Extension";
@@ -597,6 +620,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9E05BC312255BFCE008CD951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ShowEngine-watchOS";
+			targetProxy = 9E05BC302255BFCE008CD951 /* PBXContainerItemProxy */;
+		};
 		9EC92A2A2255AC18005B929E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9EC92A262255AC18005B929E /* SlideShow-watch Extension */;
