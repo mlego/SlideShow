@@ -6,11 +6,23 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXFileReference section */
+		9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShowEngineFramework.xcodeproj; path = ShowEngineFramework/ShowEngineFramework.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		9EC929AF2255A16E005B929E = {
 			isa = PBXGroup;
 			children = (
+				9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */,
 			);
+			sourceTree = "<group>";
+		};
+		9EC929BF2255A1B0005B929E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -30,6 +42,12 @@
 			);
 			mainGroup = 9EC929AF2255A16E005B929E;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9EC929BF2255A1B0005B929E /* Products */;
+					ProjectRef = 9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 			);
