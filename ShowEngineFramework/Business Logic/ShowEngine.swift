@@ -32,10 +32,11 @@ public class ShowEngine {
     public func start() {
         
         getNextImage() { [weak self] in
-            if let result = $0 {
-                self?.loadImage(imageData: result) { [weak self] in
-                    if let result = $0 {
-                        print("Image loaded & ready for display: \(result)")
+            if var model = $0 {
+                self?.loadImage(model: model) { [weak self] in
+                    if let imageData = $0 {
+                        model.imageData = imageData
+                        print("Image loaded & ready for display: \(String(describing: model.imageData ?? nil))")
                         
                         self?.showTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { [weak self] timer in
                             self?.start()
@@ -94,8 +95,8 @@ public class ShowEngine {
         }
     }
     
-    private func loadImage(imageData: ShowEngineModel, completion: @escaping (Data?) -> Void) {
-        if let imageURL = getImageURL(urls: imageData.images) {
+    private func loadImage(model: ShowEngineModel, completion: @escaping (Data?) -> Void) {
+        if let imageURL = getImageURL(urls: model.images) {
             Alamofire.request(imageURL).responseData { response in
                 if let image = response.result.value {
                     completion(image)

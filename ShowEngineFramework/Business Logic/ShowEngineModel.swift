@@ -9,6 +9,8 @@ public struct ShowEngineModel: Codable {
     public let likes: Int?
     public let user: User
     
+    public var imageData: Data?
+    
     public struct Images: Codable {
         public let raw: String?
         public let full: String?
