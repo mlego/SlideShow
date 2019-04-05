@@ -42,9 +42,10 @@ public class ShowEngine {
                 }
             }
         } else {
-            showTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true, block: { [weak self] timer in
+            showTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { [weak self] timer in
                 if let image = self?.imageData.popLast() {
                     print("Will Display Image:\n\(image)\n")
+                    self?.getImage(imageData: image)
                 } else {
                     self?.start()
                 }
@@ -63,8 +64,40 @@ public class ShowEngine {
         }
     }
     
+    // MARK: - Image Load
+    private func getImage(imageData: ShowEngineModel) {
+        if let imageURL = getImageURL(urls: imageData.images) {
+            Alamofire.request(imageURL).responseData { [weak self] response in
+                if let image = response.result.value {
+                    print("got image: \(image)")
+                } else {
+                    print("error loading image)")
+                }
+            }
+        }
+    }
+    
+    private func getImageURL(urls: ShowEngineModel.Images) -> String? {
+        var resultURL: String?
+        
+        switch imageSize {
+        case .full:
+            resultURL = urls.full
+        case .raw:
+            resultURL = urls.raw
+        case .regular:
+            resultURL = urls.regular
+        case .small:
+            resultURL = urls.small
+        case .thumb:
+            resultURL = urls.thumb
+        }
+        
+        return resultURL
+    }
+    
     // MARK: - Data Load
-    public func getData(completion: @escaping ([ShowEngineModel]?) -> Void) {
+    private func getData(completion: @escaping ([ShowEngineModel]?) -> Void) {
         let headers: HTTPHeaders = ["Authorization": "Client-ID \(Keys().unsplashAccessKey)"]
 
         Alamofire.request("https://api.unsplash.com/photos/random?count=10", headers: headers).responseJSON { response in
