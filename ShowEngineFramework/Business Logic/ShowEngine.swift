@@ -21,36 +21,50 @@ public class ShowEngine {
     
     private var showTimer: Timer?
     private var imageSize: ImageSize
-    private var imageData: [ShowEngineModel]
+    private var imageCache: [ShowEngineModel]
     
     public init(imageSize: ImageSize) {
         self.imageSize = imageSize
-        self.imageData = []
+        self.imageCache = []
     }
     
-    // MARK: - Engine Timer
+    // MARK: - Show Engine Run Loop
     public func start() {
-        if imageData.isEmpty {
-            if let timer = showTimer, timer.isValid {
-                stopTimer()
+        
+        getNextImage() { [weak self] in
+            if let result = $0 {
+                self?.loadImage(imageData: result) { [weak self] in
+                    if let result = $0 {
+                        print("Image loaded & ready for display: \(result)")
+                        
+                        self?.showTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { [weak self] timer in
+                            self?.start()
+                        })
+                        
+                    } else {
+                        print("Couldn't load image")
+                        self?.stop()
+                    }
+                }
+            } else {
+                print("Couldn't load data")
+                self?.stop()
             }
-            
-            getData() { [weak self] in
+        }
+    }
+    
+    private func getNextImage(completion: @escaping (ShowEngineModel?) -> Void) {
+        if imageCache.isEmpty {
+            loadData() { [weak self] in
                 if let result = $0 {
-                    self?.imageData = result
-                    self?.start()
+                    self?.imageCache = result
+                    completion(self?.imageCache.popLast())
+                } else {
+                    completion(nil)
                 }
             }
         } else {
-            showTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { [weak self] timer in
-                if let image = self?.imageData.popLast() {
-                    print("Will Display Image:\n\(image)\n")
-                    self?.getImage(imageData: image)
-                } else {
-                    self?.start()
-                }
-            })
-            showTimer?.fire()
+            completion(imageCache.popLast())
         }
     }
     
@@ -63,20 +77,36 @@ public class ShowEngine {
             showTimer?.invalidate()
         }
     }
+
     
-    // MARK: - Image Load
-    private func getImage(imageData: ShowEngineModel) {
+    // MARK: - Data & Image Load
+    private func loadData(completion: @escaping ([ShowEngineModel]?) -> Void) {
+        let headers: HTTPHeaders = ["Authorization": "Client-ID \(Keys().unsplashAccessKey)"]
+
+        Alamofire.request("https://api.unsplash.com/photos/random?count=10", headers: headers).responseJSON { response in
+            do {
+                let result = try JSONDecoder.init().decode([ShowEngineModel].self, from: response.data!)
+                print("Loaded data, count: \(result.count)")
+                completion(result)
+            } catch {
+                completion(nil)
+            }
+        }
+    }
+    
+    private func loadImage(imageData: ShowEngineModel, completion: @escaping (Data?) -> Void) {
         if let imageURL = getImageURL(urls: imageData.images) {
-            Alamofire.request(imageURL).responseData { [weak self] response in
+            Alamofire.request(imageURL).responseData { response in
                 if let image = response.result.value {
-                    print("got image: \(image)")
+                    completion(image)
                 } else {
-                    print("error loading image)")
+                    completion(nil)
                 }
             }
         }
     }
     
+    // MARK: - Helpers
     private func getImageURL(urls: ShowEngineModel.Images) -> String? {
         var resultURL: String?
         
@@ -94,22 +124,6 @@ public class ShowEngine {
         }
         
         return resultURL
-    }
-    
-    // MARK: - Data Load
-    private func getData(completion: @escaping ([ShowEngineModel]?) -> Void) {
-        let headers: HTTPHeaders = ["Authorization": "Client-ID \(Keys().unsplashAccessKey)"]
-
-        Alamofire.request("https://api.unsplash.com/photos/random?count=10", headers: headers).responseJSON { response in
-            do {
-                let result = try JSONDecoder.init().decode([ShowEngineModel].self, from: response.data!)
-                print("Loaded data, count: \(result.count)")
-                completion(result)
-            } catch {
-                print("something aint right: \(error)")
-                completion(nil)
-            }
-        }
     }
     
     deinit {
