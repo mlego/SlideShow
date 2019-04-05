@@ -29,7 +29,7 @@ public struct ShowEngineModel: Codable {
             public let large: String?
         }
         
-        public enum CodingKeys: String, CodingKey {
+        private enum CodingKeys: String, CodingKey {
             case name = "name"
             case bio = "bio"
             case location = "location"
@@ -37,7 +37,7 @@ public struct ShowEngineModel: Codable {
         }
     }
     
-    public enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case images = "urls"
         case imageDescription = "description"
         case likes = "likes"
