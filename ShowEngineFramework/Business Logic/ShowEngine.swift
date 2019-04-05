@@ -87,7 +87,7 @@ public class ShowEngine {
         Alamofire.request("https://api.unsplash.com/photos/random?count=10", headers: headers).responseJSON { response in
             do {
                 let result = try JSONDecoder.init().decode([ShowEngineModel].self, from: response.data!)
-                print("Loaded data, count: \(result.count)")
+                print("Data loaded, image count: \(result.count)")
                 completion(result)
             } catch {
                 completion(nil)
