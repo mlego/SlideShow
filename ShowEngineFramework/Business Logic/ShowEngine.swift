@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import Keys
 
 public enum ImageSize {
     case raw
@@ -64,7 +65,7 @@ public class ShowEngine {
     
     // MARK: - Data Load
     public func getData(completion: @escaping ([ShowEngineModel]?) -> Void) {
-        let headers: HTTPHeaders = ["Authorization": "Client-ID "]
+        let headers: HTTPHeaders = ["Authorization": "Client-ID \(Keys().unsplashAccessKey)"]
 
         Alamofire.request("https://api.unsplash.com/photos/random?count=10", headers: headers).responseJSON { response in
             do {

@@ -76,3 +76,9 @@ target 'ShowEngine-watchOS' do
     project_show_engine
     pod_common
 end
+
+plugin 'cocoapods-keys', {
+  :project => 'ShowEngineFramework/ShowEngineFramework.xcodeproj',
+  :keys => [
+  "UnsplashAccessKey"
+  ]}
