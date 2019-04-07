@@ -11,31 +11,30 @@ class ViewController: UIViewController, ShowEngineOutput {
 
     var showEngine: ShowEngine?
     var viewModel: ViewModel?
-    var dataProvider: ShowEngineInput
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+    @IBOutlet weak var outputImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        viewModel?.image.addObserver { [weak self] image in
-            self?.outputImage.image = image
-        }
         
-//        showEngine = ShowEngine(imageSize: .full)
-//
-//        if let engine = showEngine {
-//            engine.start()
-//        }
+        viewModel = ViewModel()
+        viewModel?.image.addObserver { [weak self] image in
+            self?.outputImageView.image = image
+        }
     }
     
-    func imageLoaded(data: TestImageData?) {
-        if let imageData = data, let image = UIImage(data: imageData.image) {
+    public func imageLoadSuccess(data: ShowEngineModel) {
+        if let imageData = data.imageData,
+            let image = UIImage(data: imageData) {
             viewModel?.image.value = image
-        } else {
-            
         }
+    }
+    
+    public func imageLoadFailure() {
+        
+    }
+    
+    func start() {
+        showEngine?.start()
     }
 }
