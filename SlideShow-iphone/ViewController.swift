@@ -10,7 +10,7 @@ class Model {
     let image: UIImage
     
     init(orig: ShowEngineModel) {
-        photographer = "Photographer: \(orig.user.name ?? " Unknowned")"
+        photographer = "Photographer: \(orig.user.name ?? " Unknown")"
         location = "Location: \(orig.user.location ?? "Anywhere")"
         likes = "Likes \(orig.likes ?? 0)"
         
@@ -44,20 +44,20 @@ class ViewController: UIViewController, ShowEngineOutput {
         super.viewDidLoad()
         
         viewModel = ViewModel()
-        viewModel?.image.addObserver { [weak self] image in
-            self?.outputImageView.image = image
+        viewModel?.image.addObserver { [weak self] in
+            self?.outputImageView.image = $0
         }
         
-        viewModel?.location.addObserver { [weak self] text in
-            self?.locationLabel.text = text
+        viewModel?.location.addObserver { [weak self] in
+            self?.locationLabel.text = $0
         }
         
-        viewModel?.likes.addObserver { [weak self] text in
-            self?.likesLabel.text = text
+        viewModel?.likes.addObserver { [weak self] in
+            self?.likesLabel.text = $0
         }
         
-        viewModel?.photographer.addObserver { [weak self] text in
-            self?.photographerLabel.text = text
+        viewModel?.photographer.addObserver { [weak self] in
+            self?.photographerLabel.text = $0
         }
     }
     
