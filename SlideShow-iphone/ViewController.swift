@@ -36,6 +36,9 @@ class ViewController: UIViewController, ShowEngineOutput {
     var viewModel: ViewModel?
     
     @IBOutlet weak var outputImageView: UIImageView!
+    @IBOutlet weak var photographerLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var likesLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,11 +47,22 @@ class ViewController: UIViewController, ShowEngineOutput {
         viewModel?.image.addObserver { [weak self] image in
             self?.outputImageView.image = image
         }
+        
+        viewModel?.location.addObserver { [weak self] text in
+            self?.locationLabel.text = text
+        }
+        
+        viewModel?.likes.addObserver { [weak self] text in
+            self?.likesLabel.text = text
+        }
+        
+        viewModel?.photographer.addObserver { [weak self] text in
+            self?.photographerLabel.text = text
+        }
     }
     
     public func imageLoadSuccess(data: ShowEngineModel) {
         let myModel = Model(orig: data)
-        
         viewModel?.image.value = myModel.image
         viewModel?.location.value = myModel.location
         viewModel?.likes.value = myModel.likes
