@@ -9,6 +9,16 @@ import Foundation
 import Alamofire
 import Keys
 
+public protocol ShowEngineInput {
+    func start()
+    func stop()
+}
+
+public protocol ShowEngineOutput {
+    func imageLoadSuccess(data: ShowEngineModel)
+    func imageLoadFailure()
+}
+
 public enum ImageSize {
     case raw
     case full
@@ -17,13 +27,15 @@ public enum ImageSize {
     case thumb
 }
 
-public class ShowEngine {
+public class ShowEngine: ShowEngineInput {
     
     private var showTimer: Timer?
     private var imageSize: ImageSize
     private var imageCache: [ShowEngineModel]
+    private var output: ShowEngineOutput
     
-    public init(imageSize: ImageSize) {
+    public init(output: ShowEngineOutput, imageSize: ImageSize = ImageSize.regular) {
+        self.output = output
         self.imageSize = imageSize
         self.imageCache = []
     }

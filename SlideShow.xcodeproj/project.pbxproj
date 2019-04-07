@@ -12,6 +12,14 @@
 		95A6EF8650F6B32E17103215 /* Pods_SlideShow_tv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D53EB4C0AD78E0DE650284 /* Pods_SlideShow_tv.framework */; };
 		9E05BC2E2255BFCE008CD951 /* ShowEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A112255AB6F005B929E /* ShowEngine.framework */; };
 		9E05BC2F2255BFCE008CD951 /* ShowEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A112255AB6F005B929E /* ShowEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9EBEC84D2258175F00BFA69C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC84C2258175F00BFA69C /* Observable.swift */; };
+		9EBEC84E2258175F00BFA69C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC84C2258175F00BFA69C /* Observable.swift */; };
+		9EBEC84F2258175F00BFA69C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC84C2258175F00BFA69C /* Observable.swift */; };
+		9EBEC8502258175F00BFA69C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC84C2258175F00BFA69C /* Observable.swift */; };
+		9EBEC8522258178500BFA69C /* ShowEngineUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC8512258178500BFA69C /* ShowEngineUseCaseFactory.swift */; };
+		9EBEC8562259A33900BFA69C /* ShowEngineUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC8512258178500BFA69C /* ShowEngineUseCaseFactory.swift */; };
+		9EBEC8572259A33900BFA69C /* ShowEngineUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC8512258178500BFA69C /* ShowEngineUseCaseFactory.swift */; };
+		9EBEC8582259A33900BFA69C /* ShowEngineUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC8512258178500BFA69C /* ShowEngineUseCaseFactory.swift */; };
 		9EC929FE2255AB6E005B929E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC929FD2255AB6E005B929E /* AppDelegate.swift */; };
 		9EC92A002255AB6E005B929E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC929FF2255AB6E005B929E /* ViewController.swift */; };
 		9EC92A032255AB6E005B929E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC92A012255AB6E005B929E /* Main.storyboard */; };
@@ -193,6 +201,9 @@
 		957FAD57F99DB97193A65563 /* Pods-SlideShow-mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac.release.xcconfig"; sourceTree = "<group>"; };
 		962B753E0628DFE7EB4F3AC0 /* Pods-SlideShow-mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac.debug.xcconfig"; sourceTree = "<group>"; };
 		9E05BC362255C33C008CD951 /* SlideShow-mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SlideShow-mac.entitlements"; sourceTree = "<group>"; };
+		9EBEC84B2258175F00BFA69C /* SlideShow-watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideShow-watch-Bridging-Header.h"; sourceTree = "<group>"; };
+		9EBEC84C2258175F00BFA69C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		9EBEC8512258178500BFA69C /* ShowEngineUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEngineUseCaseFactory.swift; sourceTree = "<group>"; };
 		9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShowEngineFramework.xcodeproj; path = ShowEngineFramework/ShowEngineFramework.xcodeproj; sourceTree = "<group>"; };
 		9EC929FA2255AB6E005B929E /* SlideShow-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SlideShow-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC929FD2255AB6E005B929E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -304,6 +315,8 @@
 		9EC929AF2255A16E005B929E = {
 			isa = PBXGroup;
 			children = (
+				9EBEC8512258178500BFA69C /* ShowEngineUseCaseFactory.swift */,
+				9EBEC84C2258175F00BFA69C /* Observable.swift */,
 				9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */,
 				9EC929FC2255AB6E005B929E /* SlideShow-iphone */,
 				9EC92A1C2255AC17005B929E /* SlideShow-watch */,
@@ -313,6 +326,7 @@
 				9EC929FB2255AB6E005B929E /* Products */,
 				4837C89AD840CEBDEBA330A3 /* Pods */,
 				E60B668027171728D0041E74 /* Frameworks */,
+				9EBEC84B2258175F00BFA69C /* SlideShow-watch-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -535,6 +549,7 @@
 					};
 					9EC92A1A2255AC17005B929E = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					9EC92A262255AC18005B929E = {
 						CreatedOnToolsVersion = 10.2;
@@ -838,6 +853,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC92A002255AB6E005B929E /* ViewController.swift in Sources */,
+				9EBEC8522258178500BFA69C /* ShowEngineUseCaseFactory.swift in Sources */,
+				9EBEC84D2258175F00BFA69C /* Observable.swift in Sources */,
 				9EC929FE2255AB6E005B929E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -846,6 +863,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBEC84E2258175F00BFA69C /* Observable.swift in Sources */,
+				9EBEC8572259A33900BFA69C /* ShowEngineUseCaseFactory.swift in Sources */,
 				9EC92A312255AC18005B929E /* NotificationController.swift in Sources */,
 				9EC92A2F2255AC18005B929E /* ExtensionDelegate.swift in Sources */,
 				9EC92A2D2255AC18005B929E /* InterfaceController.swift in Sources */,
@@ -857,6 +876,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC92A4A2255AC2B005B929E /* ViewController.swift in Sources */,
+				9EBEC8562259A33900BFA69C /* ShowEngineUseCaseFactory.swift in Sources */,
+				9EBEC84F2258175F00BFA69C /* Observable.swift in Sources */,
 				9EC92A482255AC2B005B929E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -866,6 +887,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC92A5D2255AC3D005B929E /* ViewController.swift in Sources */,
+				9EBEC8582259A33900BFA69C /* ShowEngineUseCaseFactory.swift in Sources */,
+				9EBEC8502258175F00BFA69C /* Observable.swift in Sources */,
 				9EC92A5B2255AC3D005B929E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1357,6 +1380,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBSC_MODULE = SlideShow_watch_Extension;
 				INFOPLIST_FILE = "SlideShow-watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1365,6 +1393,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "SlideShow-watch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -1424,6 +1453,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBSC_MODULE = SlideShow_watch_Extension;
 				INFOPLIST_FILE = "SlideShow-watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.SlideShow-iphone.watchkitapp";
@@ -1431,6 +1465,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "SlideShow-watch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;

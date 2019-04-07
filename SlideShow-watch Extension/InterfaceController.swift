@@ -6,16 +6,16 @@ import ShowEngine
 
 class InterfaceController: WKInterfaceController {
 
-    var showEngine: ShowEngine?
+//    var showEngine: ShowEngine?
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        showEngine = ShowEngine(imageSize: .small)
-        
-        if let engine = showEngine {
-            engine.start()
-        }
+//        showEngine = ShowEngine(imageSize: .small)
+//
+//        if let engine = showEngine {
+//            engine.start()
+//        }
     }
     
     override func willActivate() {

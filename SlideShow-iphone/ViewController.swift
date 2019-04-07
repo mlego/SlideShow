@@ -3,17 +3,23 @@
 import UIKit
 import ShowEngine
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ShowEngineOutput {
     
-    var showEngine: ShowEngine?
+    var showEngine: ShowEngineInput?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    public func imageLoadSuccess(data: ShowEngineModel) {
         
-        showEngine = ShowEngine(imageSize: .regular)
+    }
+    
+    public func imageLoadFailure() {
         
-        if let engine = showEngine {
-            engine.start()
-        }
+    }
+    
+    func start() {
+        showEngine?.start()
     }
 }
