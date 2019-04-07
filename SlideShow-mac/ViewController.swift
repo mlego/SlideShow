@@ -3,18 +3,39 @@
 import Cocoa
 import ShowEngine
 
-class ViewController: NSViewController {
+class ViewModel {
+    let image = Observable<NSImage>(value: NSImage())
+}
+
+class ViewController: NSViewController, ShowEngineOutput {
 
     var showEngine: ShowEngine?
+    var viewModel: ViewModel?
+    
+    @IBOutlet weak var outputImageView: NSImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showEngine = ShowEngine(imageSize: .regular)
-        
-        if let engine = showEngine {
-            engine.start()
+        viewModel = ViewModel()
+        viewModel?.image.addObserver { [weak self] image in
+            self?.outputImageView.image = image
         }
+    }
+    
+    public func imageLoadSuccess(data: ShowEngineModel) {
+        if let imageData = data.imageData,
+            let image = NSImage(data: imageData) {
+            viewModel?.image.value = image
+        }
+    }
+    
+    public func imageLoadFailure() {
+        
+    }
+    
+    func start() {
+        showEngine?.start()
     }
 
     override var representedObject: Any? {

@@ -49,6 +49,7 @@ public class ShowEngine: ShowEngineInput {
                     if let imageData = $0 {
                         model.imageData = imageData
                         print("Image loaded & ready for display: \(String(describing: model.imageData ?? nil))")
+                        self?.output.imageLoadSuccess(data: model)
                         
                         self?.showTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { [weak self] timer in
                             self?.start()
