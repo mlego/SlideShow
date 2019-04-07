@@ -9,12 +9,12 @@ class Model {
     let likes: String
     let image: UIImage
     
-    init(orig: ShowEngineModel) {
-        photographer = "Photographer: \(orig.user.name ?? " Unknown")"
-        location = "Location: \(orig.user.location ?? "Anywhere")"
-        likes = "Likes \(orig.likes ?? 0)"
+    init(from model: ShowEngineModel) {
+        photographer = "Photographer: \(model.user.name ?? " Unknown")"
+        location = "Location: \(model.user.location ?? "Anywhere")"
+        likes = "Likes \(model.likes ?? 0)"
         
-        if let imageData = orig.imageData,
+        if let imageData = model.imageData,
             let anImage = UIImage(data: imageData) {
                 image = anImage
         } else {
@@ -62,7 +62,7 @@ class ViewController: UIViewController, ShowEngineOutput {
     }
     
     public func imageLoadSuccess(data: ShowEngineModel) {
-        let myModel = Model(orig: data)
+        let myModel = Model(from: data)
         viewModel?.image.value = myModel.image
         viewModel?.location.value = myModel.location
         viewModel?.likes.value = myModel.likes
