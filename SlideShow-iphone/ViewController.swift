@@ -3,8 +3,31 @@
 import UIKit
 import ShowEngine
 
+class Model {
+    let photographer: String
+    let location: String
+    let likes: String
+    let image: UIImage
+    
+    init(orig: ShowEngineModel) {
+        photographer = "Photographer: \(orig.user.name ?? " Unknowned")"
+        location = "Location: \(orig.user.location ?? "Anywhere")"
+        likes = "Likes \(orig.likes ?? 0)"
+        
+        if let imageData = orig.imageData,
+            let anImage = UIImage(data: imageData) {
+                image = anImage
+        } else {
+            image = UIImage(named: "")!
+        }
+    }
+}
+
 class ViewModel {
     let image = Observable<UIImage>(value: UIImage())
+    let location = Observable<String>(value: String())
+    let likes = Observable<String>(value: String())
+    let photographer = Observable<String>(value: String())
 }
 
 class ViewController: UIViewController, ShowEngineOutput {
@@ -24,10 +47,12 @@ class ViewController: UIViewController, ShowEngineOutput {
     }
     
     public func imageLoadSuccess(data: ShowEngineModel) {
-        if let imageData = data.imageData,
-            let image = UIImage(data: imageData) {
-            viewModel?.image.value = image
-        }
+        let myModel = Model(orig: data)
+        
+        viewModel?.image.value = myModel.image
+        viewModel?.location.value = myModel.location
+        viewModel?.likes.value = myModel.likes
+        viewModel?.photographer.value = myModel.photographer
     }
     
     public func imageLoadFailure() {
