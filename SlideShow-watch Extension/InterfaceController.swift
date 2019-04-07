@@ -4,18 +4,43 @@ import WatchKit
 import Foundation
 import ShowEngine
 
-class InterfaceController: WKInterfaceController {
+class ViewModel {
+    let image = Observable<UIImage>(value: UIImage())
+}
 
-//    var showEngine: ShowEngine?
+class InterfaceController: WKInterfaceController, ShowEngineOutput {
+
+    var showEngine: ShowEngineInput?
+    var viewModel: ViewModel?
+    
+    @IBOutlet weak var outputImageView: WKInterfaceImage!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-//        showEngine = ShowEngine(imageSize: .small)
-//
-//        if let engine = showEngine {
-//            engine.start()
-//        }
+        viewModel = ViewModel()
+        viewModel?.image.addObserver { [weak self] image in
+            self?.outputImageView.setImage(image)
+        }
+    }
+    
+    public func imageLoadSuccess(data: ShowEngineModel) {
+        if let imageData = data.imageData,
+            let image = UIImage(data: imageData) {
+            viewModel?.image.value = image
+        }
+    }
+    
+    public func imageLoadFailure() {
+        
+    }
+    
+    func start() {
+        showEngine?.start()
+    }
+    
+    func stop() {
+        showEngine?.stop()
     }
     
     override func willActivate() {
@@ -27,5 +52,4 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
 }

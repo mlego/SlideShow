@@ -204,6 +204,8 @@
 		9EBEC84B2258175F00BFA69C /* SlideShow-watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideShow-watch-Bridging-Header.h"; sourceTree = "<group>"; };
 		9EBEC84C2258175F00BFA69C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		9EBEC8512258178500BFA69C /* ShowEngineUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEngineUseCaseFactory.swift; sourceTree = "<group>"; };
+		9EBEC85A225A9C5F00BFA69C /* SlideShow-watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SlideShow-watch.entitlements"; sourceTree = "<group>"; };
+		9EBEC85B225A9C9500BFA69C /* SlideShow-watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SlideShow-watch Extension.entitlements"; sourceTree = "<group>"; };
 		9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShowEngineFramework.xcodeproj; path = ShowEngineFramework/ShowEngineFramework.xcodeproj; sourceTree = "<group>"; };
 		9EC929FA2255AB6E005B929E /* SlideShow-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SlideShow-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC929FD2255AB6E005B929E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 		9EC92A1C2255AC17005B929E /* SlideShow-watch */ = {
 			isa = PBXGroup;
 			children = (
+				9EBEC85A225A9C5F00BFA69C /* SlideShow-watch.entitlements */,
 				9EC92A1D2255AC17005B929E /* Interface.storyboard */,
 				9EC92A202255AC18005B929E /* Assets.xcassets */,
 				9EC92A222255AC18005B929E /* Info.plist */,
@@ -379,6 +382,7 @@
 		9EC92A2B2255AC18005B929E /* SlideShow-watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9EBEC85B225A9C9500BFA69C /* SlideShow-watch Extension.entitlements */,
 				9EC92A2C2255AC18005B929E /* InterfaceController.swift */,
 				9EC92A2E2255AC18005B929E /* ExtensionDelegate.swift */,
 				9EC92A302255AC18005B929E /* NotificationController.swift */,
@@ -550,9 +554,19 @@
 					9EC92A1A2255AC17005B929E = {
 						CreatedOnToolsVersion = 10.2;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9EC92A262255AC18005B929E = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9EC92A442255AC2B005B929E = {
 						CreatedOnToolsVersion = 10.2;
@@ -1212,6 +1226,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "SlideShow-watch Extension/SlideShow-watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1287,6 +1302,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "SlideShow-watch Extension/SlideShow-watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1357,6 +1373,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "SlideShow-watch/SlideShow-watch.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
@@ -1436,6 +1453,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "SlideShow-watch/SlideShow-watch.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
