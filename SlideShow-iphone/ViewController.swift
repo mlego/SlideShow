@@ -12,7 +12,7 @@ class Model {
     init(from model: ShowEngineModel) {
         photographer = "Photographer: \(model.user.name ?? " Unknown")"
         location = "Location: \(model.user.location ?? "Anywhere")"
-        likes = "Likes \(model.likes ?? 0)"
+        likes = "Likes: \(model.likes ?? 0)"
         
         if let imageData = model.imageData,
             let anImage = UIImage(data: imageData) {

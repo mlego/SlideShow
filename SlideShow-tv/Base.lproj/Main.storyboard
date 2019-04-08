@@ -23,20 +23,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Auz-CM-Fwp">
-                                <rect key="frame" x="110" y="68" width="1700" height="944"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1920" id="0d2-aP-gle"/>
+                                    <constraint firstAttribute="height" constant="1080" id="IGO-LL-bjq"/>
+                                </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="em7-ab-nCc">
+                                <rect key="frame" x="110" y="858" width="1700" height="116"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwh-Z4-uIF">
+                                        <rect key="frame" x="0.0" y="0.0" width="1700" height="46"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfc-cC-XeA">
+                                        <rect key="frame" x="0.0" y="46" width="1700" height="35"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvh-XE-XBE">
+                                        <rect key="frame" x="0.0" y="81" width="1700" height="35"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Auz-CM-Fwp" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="8" id="JAr-SX-QEV"/>
-                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="Auz-CM-Fwp" secondAttribute="trailing" constant="20" id="cn2-tB-aLk"/>
-                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="Auz-CM-Fwp" secondAttribute="bottom" constant="8" id="pRP-Pi-BI2"/>
-                            <constraint firstItem="Auz-CM-Fwp" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="20" id="zK2-Ll-mvz"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="em7-ab-nCc" secondAttribute="bottom" constant="46" id="IX6-nF-qbP"/>
+                            <constraint firstItem="Auz-CM-Fwp" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="bottom" constant="-1020" id="MWc-Ia-4nr"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="em7-ab-nCc" secondAttribute="trailing" constant="20" id="aIF-Me-zog"/>
+                            <constraint firstItem="Auz-CM-Fwp" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="trailing" constant="-1830" id="amC-xI-NNT"/>
+                            <constraint firstItem="em7-ab-nCc" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="20" id="auU-Gt-YKT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
                     <connections>
+                        <outlet property="descriptionLabel" destination="Rvh-XE-XBE" id="EKs-EX-yjE"/>
+                        <outlet property="locationLabel" destination="kfc-cC-XeA" id="0KB-z5-mcm"/>
                         <outlet property="outputImageView" destination="Auz-CM-Fwp" id="aCQ-lN-8UG"/>
+                        <outlet property="photographerLabel" destination="uwh-Z4-uIF" id="Car-GS-0D1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
