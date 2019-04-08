@@ -83,7 +83,5 @@ class ViewController: NSViewController, ShowEngineOutput {
         // Update the view, if already loaded.
         }
     }
-
-
 }
 
