@@ -209,7 +209,7 @@
 		9EBEC85A225A9C5F00BFA69C /* SlideShow-watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SlideShow-watch.entitlements"; sourceTree = "<group>"; };
 		9EBEC85B225A9C9500BFA69C /* SlideShow-watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SlideShow-watch Extension.entitlements"; sourceTree = "<group>"; };
 		9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShowEngineFramework.xcodeproj; path = ShowEngineFramework/ShowEngineFramework.xcodeproj; sourceTree = "<group>"; };
-		9EC929FA2255AB6E005B929E /* SlideShow-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SlideShow-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC929FA2255AB6E005B929E /* Slide Show.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slide Show.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC929FD2255AB6E005B929E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC929FF2255AB6E005B929E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9EC92A022255AB6E005B929E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -227,13 +227,13 @@
 		9EC92A322255AC18005B929E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EC92A342255AC18005B929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EC92A352255AC18005B929E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		9EC92A452255AC2B005B929E /* SlideShow-tv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SlideShow-tv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC92A452255AC2B005B929E /* Slide Show.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slide Show.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC92A472255AC2B005B929E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC92A492255AC2B005B929E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9EC92A4C2255AC2B005B929E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EC92A4E2255AC2C005B929E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EC92A502255AC2C005B929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EC92A582255AC3D005B929E /* SlideShow-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SlideShow-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC92A582255AC3D005B929E /* Slide Show.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slide Show.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC92A5A2255AC3D005B929E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC92A5C2255AC3D005B929E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9EC92A5E2255AC3D005B929E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -348,11 +348,11 @@
 		9EC929FB2255AB6E005B929E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9EC929FA2255AB6E005B929E /* SlideShow-iphone.app */,
+				9EC929FA2255AB6E005B929E /* Slide Show.app */,
 				9EC92A1B2255AC17005B929E /* SlideShow-watch.app */,
 				9EC92A272255AC18005B929E /* SlideShow-watch Extension.appex */,
-				9EC92A452255AC2B005B929E /* SlideShow-tv.app */,
-				9EC92A582255AC3D005B929E /* SlideShow-mac.app */,
+				9EC92A452255AC2B005B929E /* Slide Show.app */,
+				9EC92A582255AC3D005B929E /* Slide Show.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -457,7 +457,7 @@
 			);
 			name = "SlideShow-iphone";
 			productName = "SlideShow-iphone";
-			productReference = 9EC929FA2255AB6E005B929E /* SlideShow-iphone.app */;
+			productReference = 9EC929FA2255AB6E005B929E /* Slide Show.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9EC92A1A2255AC17005B929E /* SlideShow-watch */ = {
@@ -518,7 +518,7 @@
 			);
 			name = "SlideShow-tv";
 			productName = "SlideShow-tv";
-			productReference = 9EC92A452255AC2B005B929E /* SlideShow-tv.app */;
+			productReference = 9EC92A452255AC2B005B929E /* Slide Show.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9EC92A572255AC3D005B929E /* SlideShow-mac */ = {
@@ -539,7 +539,7 @@
 			);
 			name = "SlideShow-mac";
 			productName = "SlideShow-mac";
-			productReference = 9EC92A582255AC3D005B929E /* SlideShow-mac.app */;
+			productReference = 9EC92A582255AC3D005B929E /* Slide Show.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1119,7 +1119,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.SlideShow-iphone";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Slide Show";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1186,7 +1186,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.SlideShow-iphone";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Slide Show";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -1560,7 +1560,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.SlideShow-tv";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Slide Show";
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1627,7 +1627,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.SlideShow-tv";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Slide Show";
 				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -1705,7 +1705,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.SlideShow-mac";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Slide Show";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1773,7 +1773,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.gobotgo.SlideShow-mac";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Slide Show";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
