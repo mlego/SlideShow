@@ -4,15 +4,15 @@ import Cocoa
 import ShowEngine
 
 class Model {
-    let photographer: String
-    let location: String
-    let likes: String
+    let callout: String
     let image: NSImage
     
     init(from model: ShowEngineModel) {
-        photographer = "Photographer: \(model.user.name ?? " Unknown")"
-        location = "Location: \(model.user.location ?? "Anywhere")"
-        likes = "Likes: \(model.likes ?? 0)"
+        var tempCallout = ""
+        if let description = model.imageDescription, !description.isEmpty { tempCallout += description + " by "}
+        if let name = model.user.name, !name.isEmpty { tempCallout += name }
+        tempCallout += ". \(model.likes ?? 0) like(s)"
+        callout = tempCallout
         
         if let imageData = model.imageData,
             let anImage = NSImage(data: imageData) {
@@ -25,9 +25,7 @@ class Model {
 
 class ViewModel {
     let image = Observable<NSImage>(value: NSImage())
-    let location = Observable<String>(value: String())
-    let likes = Observable<String>(value: String())
-    let photographer = Observable<String>(value: String())
+    let callout = Observable<String>(value: String())
 }
 
 class ViewController: NSViewController, ShowEngineOutput {
@@ -36,6 +34,7 @@ class ViewController: NSViewController, ShowEngineOutput {
     var viewModel: ViewModel?
     
     @IBOutlet weak var outputImageView: NSImageView!
+    @IBOutlet weak var calloutLabel: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,25 +44,15 @@ class ViewController: NSViewController, ShowEngineOutput {
             self?.outputImageView.image = $0
         }
         
-//        viewModel?.location.addObserver { [weak self] in
-//            self?.locationLabel.text = $0
-//        }
-//
-//        viewModel?.likes.addObserver { [weak self] in
-//            self?.likesLabel.text = $0
-//        }
-//
-//        viewModel?.photographer.addObserver { [weak self] in
-//            self?.photographerLabel.text = $0
-//        }
+        viewModel?.callout.addObserver { [weak self] in
+            self?.calloutLabel.stringValue = $0
+        }
     }
     
     public func imageLoadSuccess(data: ShowEngineModel) {
         let myModel = Model(from: data)
         viewModel?.image.value = myModel.image
-        viewModel?.location.value = myModel.location
-        viewModel?.likes.value = myModel.likes
-        viewModel?.photographer.value = myModel.photographer
+        viewModel?.callout.value = myModel.callout
     }
     
     public func imageLoadFailure() {

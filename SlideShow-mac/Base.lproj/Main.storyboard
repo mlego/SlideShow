@@ -706,22 +706,34 @@
             <objects>
                 <viewController showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" customModule="SlideShow_mac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="tLU-Hd-g31">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <rect key="frame" x="0.0" y="50" width="480" height="250"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="jhd-Lv-mjp"/>
                             </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="uAC-jO-0fY">
+                                <rect key="frame" x="18" y="20" width="444" height="17"/>
+                                <textFieldCell key="cell" title="Label" id="FOT-o5-JeC">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="tLU-Hd-g31" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="Awk-Sr-gfd"/>
-                            <constraint firstAttribute="trailing" secondItem="tLU-Hd-g31" secondAttribute="trailing" id="Q5T-MJ-2oV"/>
-                            <constraint firstItem="tLU-Hd-g31" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="k3g-ag-UT7"/>
-                            <constraint firstAttribute="bottom" secondItem="tLU-Hd-g31" secondAttribute="bottom" id="u8T-E3-zMb"/>
+                            <constraint firstItem="uAC-jO-0fY" firstAttribute="top" secondItem="tLU-Hd-g31" secondAttribute="bottom" constant="13" id="DeA-g3-7gp"/>
+                            <constraint firstAttribute="bottom" secondItem="tLU-Hd-g31" secondAttribute="bottom" constant="50" id="bAt-KC-Scz"/>
+                            <constraint firstItem="uAC-jO-0fY" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="gg6-h0-KvR"/>
+                            <constraint firstAttribute="trailing" secondItem="tLU-Hd-g31" secondAttribute="trailing" id="lPn-ct-ZKu"/>
+                            <constraint firstItem="tLU-Hd-g31" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="mEO-i7-zl9"/>
+                            <constraint firstItem="tLU-Hd-g31" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="v5c-CW-QcE"/>
+                            <constraint firstAttribute="trailing" secondItem="uAC-jO-0fY" secondAttribute="trailing" constant="20" id="zgq-35-0WS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="calloutLabel" destination="uAC-jO-0fY" id="T26-nU-GM9"/>
                         <outlet property="outputImageView" destination="tLU-Hd-g31" id="eWz-i3-buK"/>
                     </connections>
                 </viewController>
