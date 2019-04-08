@@ -327,13 +327,13 @@
 		9EC929AF2255A16E005B929E = {
 			isa = PBXGroup;
 			children = (
-				9E340D25225BF71F00704E83 /* Main */,
 				9EC929BE2255A1B0005B929E /* ShowEngineFramework.xcodeproj */,
+				9E340D25225BF71F00704E83 /* Main */,
 				9EC929FC2255AB6E005B929E /* SlideShow-iphone */,
-				9EC92A1C2255AC17005B929E /* SlideShow-watch */,
-				9EC92A2B2255AC18005B929E /* SlideShow-watch Extension */,
 				9EC92A462255AC2B005B929E /* SlideShow-tv */,
 				9EC92A592255AC3D005B929E /* SlideShow-mac */,
+				9EC92A1C2255AC17005B929E /* SlideShow-watch */,
+				9EC92A2B2255AC18005B929E /* SlideShow-watch Extension */,
 				9EC929FB2255AB6E005B929E /* Products */,
 				4837C89AD840CEBDEBA330A3 /* Pods */,
 				E60B668027171728D0041E74 /* Frameworks */,
