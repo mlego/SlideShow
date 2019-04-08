@@ -12,6 +12,7 @@
 		95A6EF8650F6B32E17103215 /* Pods_SlideShow_tv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D53EB4C0AD78E0DE650284 /* Pods_SlideShow_tv.framework */; };
 		9E05BC2E2255BFCE008CD951 /* ShowEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A112255AB6F005B929E /* ShowEngine.framework */; };
 		9E05BC2F2255BFCE008CD951 /* ShowEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC92A112255AB6F005B929E /* ShowEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E340D1B225BB08900704E83 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E340D1A225BB08900704E83 /* WindowController.swift */; };
 		9EBEC84D2258175F00BFA69C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC84C2258175F00BFA69C /* Observable.swift */; };
 		9EBEC84E2258175F00BFA69C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC84C2258175F00BFA69C /* Observable.swift */; };
 		9EBEC84F2258175F00BFA69C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEC84C2258175F00BFA69C /* Observable.swift */; };
@@ -201,6 +202,7 @@
 		957FAD57F99DB97193A65563 /* Pods-SlideShow-mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac.release.xcconfig"; sourceTree = "<group>"; };
 		962B753E0628DFE7EB4F3AC0 /* Pods-SlideShow-mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac.debug.xcconfig"; sourceTree = "<group>"; };
 		9E05BC362255C33C008CD951 /* SlideShow-mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SlideShow-mac.entitlements"; sourceTree = "<group>"; };
+		9E340D1A225BB08900704E83 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		9EBEC84B2258175F00BFA69C /* SlideShow-watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideShow-watch-Bridging-Header.h"; sourceTree = "<group>"; };
 		9EBEC84C2258175F00BFA69C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		9EBEC8512258178500BFA69C /* ShowEngineUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEngineUseCaseFactory.swift; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 				9EC92A602255AC3D005B929E /* Main.storyboard */,
 				9EC92A632255AC3D005B929E /* Info.plist */,
 				9EC92A642255AC3D005B929E /* SlideShow_mac.entitlements */,
+				9E340D1A225BB08900704E83 /* WindowController.swift */,
 			);
 			path = "SlideShow-mac";
 			sourceTree = "<group>";
@@ -901,6 +904,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC92A5D2255AC3D005B929E /* ViewController.swift in Sources */,
+				9E340D1B225BB08900704E83 /* WindowController.swift in Sources */,
 				9EBEC8582259A33900BFA69C /* ShowEngineUseCaseFactory.swift in Sources */,
 				9EBEC8502258175F00BFA69C /* Observable.swift in Sources */,
 				9EC92A5B2255AC3D005B929E /* AppDelegate.swift in Sources */,
