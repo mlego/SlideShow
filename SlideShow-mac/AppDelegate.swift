@@ -1,6 +1,7 @@
 // 
 
 import Cocoa
+import ShowEngine
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -12,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if let controller = NSApplication.shared.keyWindow?.contentViewController as? ViewController {
 
-            let useCase = ShowEngineUseCaseFactory().makeUseCase(output: controller)
+            let useCase = ShowEngineUseCaseFactory().makeUseCase(output: controller, imageSize: ImageSize.full)
             controller.showEngine = useCase
             controller.start()
         }

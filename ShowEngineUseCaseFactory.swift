@@ -22,7 +22,7 @@ final class ShowEngineUseCaseComposer: ShowEngineOutput {
 
 final class ShowEngineUseCaseFactory {
     
-    public func makeUseCase(output: ShowEngineOutput) -> ShowEngine {
-        return ShowEngine(output: ShowEngineUseCaseComposer([output]))
+    public func makeUseCase(output: ShowEngineOutput, imageSize: ImageSize) -> ShowEngine {
+        return ShowEngine(output: ShowEngineUseCaseComposer([output]), imageSize: imageSize)
     }
 }

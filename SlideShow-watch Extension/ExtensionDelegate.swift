@@ -13,7 +13,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidBecomeActive() {
         if let controller = (WKExtension.shared().rootInterfaceController as? InterfaceController) {
-            useCase = ShowEngineUseCaseFactory().makeUseCase(output: controller)
+            useCase = ShowEngineUseCaseFactory().makeUseCase(output: controller, imageSize: ImageSize.small)
             controller.showEngine = useCase
             controller.start()
         }

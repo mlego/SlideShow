@@ -1,17 +1,17 @@
 // 
 
 import UIKit
+import ShowEngine
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         if let controller = (window?.rootViewController as? ViewController) {
-            let useCase = ShowEngineUseCaseFactory().makeUseCase(output: controller)
+            let useCase = ShowEngineUseCaseFactory().makeUseCase(output: controller, imageSize: ImageSize.full)
             controller.showEngine = useCase
             controller.start()
         }
