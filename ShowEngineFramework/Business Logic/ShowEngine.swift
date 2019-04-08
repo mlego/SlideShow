@@ -71,11 +71,13 @@ public class ShowEngine: ShowEngineInput {
                     } else {
                         print("Couldn't load image")
                         self?.stop()
+                        self?.output.imageLoadFailure()
                     }
                 }
             } else {
                 print("Couldn't load data")
                 self?.stop()
+                self?.output.imageLoadFailure()
             }
         }
     }

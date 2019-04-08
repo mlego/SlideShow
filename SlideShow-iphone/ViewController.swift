@@ -18,7 +18,7 @@ class Model {
             let anImage = UIImage(data: imageData) {
                 image = anImage
         } else {
-            image = UIImage(named: "")!
+            image = UIImage(named: "sadFace") ?? UIImage()
         }
     }
 }
@@ -70,10 +70,14 @@ class ViewController: UIViewController, ShowEngineOutput {
     }
     
     public func imageLoadFailure() {
-        
+        viewModel?.image.value = UIImage(named: "sadFace") ?? UIImage()
     }
     
     func start() {
         showEngine?.start()
+    }
+    
+    func stop() {
+        showEngine?.stop()
     }
 }
