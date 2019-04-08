@@ -1,4 +1,4 @@
-// 
+// Copyright © 2019 mlego. All rights reserved.
 
 import UIKit
 import ShowEngine
