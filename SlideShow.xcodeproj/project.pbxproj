@@ -203,7 +203,6 @@
 		962B753E0628DFE7EB4F3AC0 /* Pods-SlideShow-mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShow-mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShow-mac/Pods-SlideShow-mac.debug.xcconfig"; sourceTree = "<group>"; };
 		9E05BC362255C33C008CD951 /* SlideShow-mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SlideShow-mac.entitlements"; sourceTree = "<group>"; };
 		9E340D1A225BB08900704E83 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
-		9EBEC84B2258175F00BFA69C /* SlideShow-watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideShow-watch-Bridging-Header.h"; sourceTree = "<group>"; };
 		9EBEC84C2258175F00BFA69C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		9EBEC8512258178500BFA69C /* ShowEngineUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEngineUseCaseFactory.swift; sourceTree = "<group>"; };
 		9EBEC85A225A9C5F00BFA69C /* SlideShow-watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SlideShow-watch.entitlements"; sourceTree = "<group>"; };
@@ -330,7 +329,6 @@
 				9EC929FB2255AB6E005B929E /* Products */,
 				4837C89AD840CEBDEBA330A3 /* Pods */,
 				E60B668027171728D0041E74 /* Frameworks */,
-				9EBEC84B2258175F00BFA69C /* SlideShow-watch-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
