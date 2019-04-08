@@ -3,9 +3,9 @@
 import Cocoa
 import ShowEngine
 
-class Model {
-    let callout: String
-    let image: NSImage
+final class Model {
+    fileprivate let callout: String
+    fileprivate let image: NSImage
     
     init(from model: ShowEngineModel) {
         var tempCallout = ""
@@ -23,15 +23,15 @@ class Model {
     }
 }
 
-class ViewModel {
-    let image = Observable<NSImage>(value: NSImage())
-    let callout = Observable<String>(value: String())
+final class ViewModel {
+    fileprivate let image = Observable<NSImage>(value: NSImage())
+    fileprivate let callout = Observable<String>(value: String())
 }
 
-class ViewController: NSViewController, ShowEngineOutput {
+final class ViewController: NSViewController, ShowEngineOutput {
 
     var showEngine: ShowEngine?
-    var viewModel: ViewModel?
+    private var viewModel: ViewModel?
     
     @IBOutlet weak var outputImageView: NSImageView!
     @IBOutlet weak var calloutLabel: NSTextField!
@@ -49,13 +49,13 @@ class ViewController: NSViewController, ShowEngineOutput {
         }
     }
     
-    public func imageLoadSuccess(data: ShowEngineModel) {
+    func imageLoadSuccess(data: ShowEngineModel) {
         let myModel = Model(from: data)
         viewModel?.image.value = myModel.image
         viewModel?.callout.value = myModel.callout
     }
     
-    public func imageLoadFailure() {
+    func imageLoadFailure() {
         viewModel?.image.value = NSImage(named: "sadFace") ?? NSImage()
     }
     

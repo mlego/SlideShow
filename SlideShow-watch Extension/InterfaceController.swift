@@ -4,8 +4,8 @@ import WatchKit
 import Foundation
 import ShowEngine
 
-class Model {
-    let image: UIImage
+final class Model {
+    fileprivate let image: UIImage
     
     init(from model: ShowEngineModel) {
         if let imageData = model.imageData,
@@ -17,14 +17,14 @@ class Model {
     }
 }
 
-class ViewModel {
-    let image = Observable<UIImage>(value: UIImage())
+final class ViewModel {
+    fileprivate let image = Observable<UIImage>(value: UIImage())
 }
 
-class InterfaceController: WKInterfaceController, ShowEngineOutput {
+final class InterfaceController: WKInterfaceController, ShowEngineOutput {
 
     var showEngine: ShowEngineInput?
-    var viewModel: ViewModel?
+    private var viewModel: ViewModel?
     
     @IBOutlet weak var outputImageView: WKInterfaceImage!
     
@@ -37,12 +37,12 @@ class InterfaceController: WKInterfaceController, ShowEngineOutput {
         }
     }
     
-    public func imageLoadSuccess(data: ShowEngineModel) {
+    func imageLoadSuccess(data: ShowEngineModel) {
         let myModel = Model(from: data)
         viewModel?.image.value = myModel.image
     }
     
-    public func imageLoadFailure() {
+    func imageLoadFailure() {
         viewModel?.image.value = UIImage(named: "sadFace") ?? UIImage()
     }
     

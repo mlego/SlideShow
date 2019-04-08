@@ -27,7 +27,7 @@ public enum ImageSize {
     case thumb
 }
 
-public class ShowEngine: ShowEngineInput {
+public final class ShowEngine: ShowEngineInput {
     
     private var showTimer: Timer?
     private var imageSize: ImageSize

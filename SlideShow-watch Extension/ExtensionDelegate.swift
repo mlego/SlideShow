@@ -5,7 +5,7 @@ import ShowEngine
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
-    var useCase: ShowEngine?
+    private var useCase: ShowEngine?
     
     func applicationDidFinishLaunching() {
     

@@ -2,7 +2,7 @@
 
 import Foundation
 
-class Observable<T> {
+final class Observable<T> {
     
     init(value: T) {
         self.value = value
