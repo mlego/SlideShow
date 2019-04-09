@@ -32,7 +32,7 @@ final class ViewModel {
 
 final class ViewController: UIViewController, ShowEngineOutput {
     
-    var showEngine: ShowEngineInput?
+    weak var showEngine: ShowEngineInput?
     private var viewModel: ViewModel?
     
     @IBOutlet weak var outputImageView: UIImageView!
@@ -42,7 +42,7 @@ final class ViewController: UIViewController, ShowEngineOutput {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         viewModel = ViewModel()
         viewModel?.image.addObserver { [weak self] in
             self?.outputImageView.image = $0

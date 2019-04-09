@@ -4,12 +4,12 @@ import Foundation
 import Alamofire
 import Keys
 
-public protocol ShowEngineInput {
+public protocol ShowEngineInput: class {
     func start()
     func stop()
 }
 
-public protocol ShowEngineOutput {
+public protocol ShowEngineOutput: class {
     func imageLoadSuccess(data: ShowEngineModel)
     func imageLoadFailure()
 }
