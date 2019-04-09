@@ -66,11 +66,5 @@ final class ViewController: NSViewController, ShowEngineOutput {
     func stop() {
         showEngine?.stop()
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
 }
 
