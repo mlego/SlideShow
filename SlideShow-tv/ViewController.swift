@@ -32,7 +32,7 @@ final class ViewModel {
 
 final class ViewController: UIViewController, ShowEngineOutput {
 
-    var showEngine: ShowEngine?
+    weak var showEngine: ShowEngine?
     private var viewModel: ViewModel?
     
     @IBOutlet weak var outputImageView: UIImageView!

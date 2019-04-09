@@ -6,6 +6,8 @@ import ShowEngine
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    private var useCase: ShowEngine?
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
         NSApplication.shared.keyWindow?.setFrame(NSRect(x: 0, y: 0, width: 800, height: 800), display: true )
@@ -13,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if let controller = NSApplication.shared.keyWindow?.contentViewController as? ViewController {
 
-            let useCase = ShowEngineUseCaseFactory().makeUseCase(output: controller, imageSize: ImageSize.full)
+            useCase = ShowEngineUseCaseFactory().makeUseCase(output: controller, imageSize: ImageSize.full)
             controller.showEngine = useCase
             controller.start()
         }

@@ -23,7 +23,7 @@ final class ViewModel {
 
 final class InterfaceController: WKInterfaceController, ShowEngineOutput {
 
-    var showEngine: ShowEngineInput?
+    weak var showEngine: ShowEngineInput?
     private var viewModel: ViewModel?
     
     @IBOutlet weak var outputImageView: WKInterfaceImage!
