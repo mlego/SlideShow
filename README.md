@@ -10,7 +10,4 @@ Modular Architecture for Multiplatform Development
 
 ### Slide Show
 
-![alt text](https://github.com/mlego/SlideShow/blob/master/Docs/mac.png "Slide Show on Mac")
-![alt text](https://github.com/mlego/SlideShow/blob/master/Docs/iphone.png "Slide Show on iPhone")
-![alt text](https://github.com/mlego/SlideShow/blob/master/Docs/tv.png "Slide Show on AppleTV")
-![alt text](https://github.com/mlego/SlideShow/blob/master/Docs/watch.png "Slide Show on Apple Watch")
+![alt text](https://github.com/mlego/SlideShow/blob/master/Docs/slideshow.png "Slide Show")
